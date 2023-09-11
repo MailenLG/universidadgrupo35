@@ -1,0 +1,1 @@
+1- Buscar la forma de identificar que parametro falta a la hora de modificar un registro
