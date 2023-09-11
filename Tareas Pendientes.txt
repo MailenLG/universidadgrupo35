@@ -1,2 +1,6 @@
+Configuracion
+libreria mariaDB = C:\librerias java
+
+
 FECHA 11-9-23 -- Estado : Pendiente
 1- Buscar la forma de identificar que parametro falta a la hora de modificar un registro
