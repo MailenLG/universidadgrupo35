@@ -43,7 +43,7 @@ public class AlumnoData {
     }
 
     public void modificarAlumno(Alumno alumno) {
-        String sql = "UPDATE alumno SET dni= ?, apellido= ?, nombre= ?, fechaNacimiento= ?"
+        String sql = "UPDATE alumno SET dni= ?, apellido= ?, nombre= ?, fechaNacimiento= ? "
                 + "WHERE idAlumno= ?";
         try {
             PreparedStatement ps = con.prepareStatement(sql);
@@ -57,7 +57,7 @@ public class AlumnoData {
             if (exito == 1) {
                 JOptionPane.showMessageDialog(null, "Alumno modificado");
             } else {
-                JOptionPane.showMessageDialog(null, "dedicate a otra cosa");
+                JOptionPane.showMessageDialog(null, "Falta un parametro a modificar");
             }
 
         } catch (SQLException ex) {
@@ -84,7 +84,6 @@ public class AlumnoData {
     }
 
     public Alumno buscarAlumno(int idAlumno) { //busco un alumno especifico
-//        System.out.println("persistencia.AlumnoData.buscarAlumno()");
         Alumno al = null;
         String sql = "SELECT * FROM alumno WHERE idAlumno=?AND estado=1";
         PreparedStatement ps;
@@ -92,7 +91,6 @@ public class AlumnoData {
         try {
             ps = con.prepareStatement(sql);
             ps.setInt(1, idAlumno);
-//            System.out.println("valor del PS "+idAlumno);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
 
@@ -103,12 +101,6 @@ public class AlumnoData {
                 al.setNombre(rs.getString("nombre"));
                 al.setFechaNacimiento(rs.getDate("fechaNacimiento").toLocalDate());
                 al.setActivo(rs.getBoolean("estado"));
-//                System.out.println("ID: " + rs.getInt("idAlumno"));
-//                System.out.println("DNI: " + rs.getInt("dni"));
-//                System.out.println("Apellido: " + rs.getString("apellido"));
-//                System.out.println("Nombre: " + rs.getString("nombre"));
-//                System.out.println("Fecha de Nacimiento: " + rs.getDate("fechaNacimiento").toLocalDate());
-//                System.out.println("Estado: " + rs.getBoolean("estado"));
                 System.out.println("Imprimo los datos : " + al);
             } else {
                 JOptionPane.showMessageDialog(null, "No existe ese alumno");
@@ -128,8 +120,9 @@ public class AlumnoData {
 
         try {
             ps = con.prepareStatement(sql);
-            ps.setInt(1, dni);
-            System.out.println("valor del PS "+dni);
+            ps.setInt(1, dni); // seteas el valor que estas buscando
+            
+           // System.out.println("valor del PS "+dni);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
                 al = new Alumno();
