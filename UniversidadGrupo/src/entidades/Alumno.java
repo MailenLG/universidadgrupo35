@@ -84,12 +84,4 @@ private boolean activo;
         return "Alumno{" + "idAlumno=" + idAlumno + ", dni=" + dni + ", apellido=" + apellido + ", nombre=" + nombre + ", fechaNacimiento=" + fechaNacimiento + ", activo=" + activo + '}';
     }
 
-
-
-
-
-
-
-
-
 }
