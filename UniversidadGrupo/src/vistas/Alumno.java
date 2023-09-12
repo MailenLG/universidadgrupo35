@@ -11,9 +11,7 @@ package vistas;
  */
 public class Alumno extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Alumno
-     */
+   
     public Alumno() {
         initComponents();
     }
