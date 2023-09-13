@@ -49,41 +49,30 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jlDoc" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jlCod" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jlAp" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jlNom" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jlFecha" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jlEst" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
+                              <Component id="jlEst" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                                  <Component id="jrbEstado" max="32767" attributes="0"/>
-                                  <EmptySpace min="-2" pref="182" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
+                                  <EmptySpace pref="63" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
                                       <Component id="jtNombre" min="-2" pref="157" max="-2" attributes="0"/>
-                                      <Component id="jdFecha" min="-2" pref="202" max="-2" attributes="0"/>
-                                      <Component id="jtApellido" alignment="0" min="-2" pref="157" max="-2" attributes="0"/>
+                                      <Component id="jtCodigo" min="-2" pref="157" max="-2" attributes="0"/>
+                                      <Component id="jtAnio" alignment="1" min="-2" pref="157" max="-2" attributes="0"/>
                                   </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jbBuscar" min="-2" pref="44" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                                  <Component id="jtDocumento" min="-2" pref="157" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jbBuscar" min="-2" pref="41" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                                  <Component id="jrbEstado" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -96,9 +85,10 @@
                           <Component id="jbGuardar" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                           <Component id="jbSalir" min="-2" pref="70" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="9" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -111,13 +101,13 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                           <Component id="jlTitulo" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jlDoc" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jtDocumento" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="jlCod" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jtCodigo" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -125,27 +115,22 @@
                           <Component id="jbBuscar" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jlAp" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jtApellido" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                  </Group>
                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jlNom" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jtNombre" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="jlAp" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="jlFecha" min="-2" max="-2" attributes="0"/>
-                      <Component id="jdFecha" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jtAnio" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="jlNom" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jlEst" min="-2" max="-2" attributes="0"/>
                       <Component id="jrbEstado" min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="51" max="32767" attributes="0"/>
+                  <EmptySpace pref="99" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jbNuevo" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jbEliminar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -166,10 +151,10 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Alumno"/>
+            <Property name="text" type="java.lang.String" value="Materia"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jlDoc">
+        <Component class="javax.swing.JLabel" name="jlCod">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -180,7 +165,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Documento :"/>
+            <Property name="text" type="java.lang.String" value="C&#xf3;digo :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jlAp">
@@ -194,7 +179,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Apellido :"/>
+            <Property name="text" type="java.lang.String" value="Nombre :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jlNom">
@@ -205,18 +190,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Nombre :"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jlFecha">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Garamond" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Fecha :"/>
+            <Property name="text" type="java.lang.String" value="A&#xf1;o :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jlEst">
@@ -240,15 +214,13 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jtDocumento">
-        </Component>
-        <Component class="com.toedter.calendar.JDateChooser" name="jdFecha">
+        <Component class="javax.swing.JTextField" name="jtCodigo">
         </Component>
         <Component class="javax.swing.JRadioButton" name="jrbEstado">
         </Component>
-        <Component class="javax.swing.JTextField" name="jtApellido">
-        </Component>
         <Component class="javax.swing.JTextField" name="jtNombre">
+        </Component>
+        <Component class="javax.swing.JTextField" name="jtAnio">
         </Component>
         <Component class="javax.swing.JButton" name="jbNuevo">
           <Properties>

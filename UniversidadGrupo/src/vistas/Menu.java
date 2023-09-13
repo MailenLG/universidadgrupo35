@@ -16,10 +16,10 @@ import javax.swing.JPanel;
  *
  * @author Usuario
  */
-public class FondoApp extends javax.swing.JFrame {
+public class Menu extends javax.swing.JFrame {
 
     FondoPanel fondo= new FondoPanel();
-    public FondoApp() {
+    public Menu() {
         this.setContentPane(fondo);
         initComponents();
     }
@@ -157,21 +157,23 @@ public class FondoApp extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FondoApp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FondoApp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FondoApp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FondoApp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FondoApp().setVisible(true);
+                new Menu().setVisible(true);
             }
         });
     }
@@ -207,6 +209,7 @@ public class FondoApp extends javax.swing.JFrame {
      g.drawImage(imagen,0,0,getWidth(),getHeight(), this);
          setOpaque(false);
          super.paint(g);
+//         setLocationRelativeTo(null);
      }
      
     }
