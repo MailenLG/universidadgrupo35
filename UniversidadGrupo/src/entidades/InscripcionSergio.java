@@ -7,23 +7,20 @@ public class InscripcionSergio {
     
 //Declaro Varables    
 private int idInscripcion;  
-private int idAlumno;
-private int idMateria;
+private Alumno alumno;
+private Materia materia;
 private int nota;
 
 //Creo Constructores 
 
-    public InscripcionSergio(int idAlumno, int idMateria, int nota) {
-       
-        this.idAlumno = idAlumno;
-        this.idMateria = idMateria;
+    public InscripcionSergio(Alumno alumno, Materia materia, int nota) {
+        this.alumno = alumno;
+        this.materia = materia;
         this.nota = nota;
     }
 
     public InscripcionSergio() {
     }
-    
-    //Creo Setter y Getter
 
     public int getIdInscripcion() {
         return idInscripcion;
@@ -33,20 +30,20 @@ private int nota;
         this.idInscripcion = idInscripcion;
     }
 
-    public int getIdAlumno() {
-        return idAlumno;
+    public Alumno getAlumno() {
+        return alumno;
     }
 
-    public void setIdAlumno(int idAlumno) {
-        this.idAlumno = idAlumno;
+    public void setAlumno(Alumno alumno) {
+        this.alumno = alumno;
     }
 
-    public int getIdMateria() {
-        return idMateria;
+    public Materia getMateria() {
+        return materia;
     }
 
-    public void setIdMateria(int idMateria) {
-        this.idMateria = idMateria;
+    public void setMateria(Materia materia) {
+        this.materia = materia;
     }
 
     public int getNota() {
@@ -59,9 +56,8 @@ private int nota;
 
     @Override
     public String toString() {
-        return "InscripcionSergio{" + "idInscripcion=" + idInscripcion + ", idAlumno=" + idAlumno + ", idMateria=" + idMateria + ", nota=" + nota + '}';
+        return "InscripcionSergio{" + "idInscripcion=" + idInscripcion + ", alumno=" + alumno + ", materia=" + materia + ", nota=" + nota + '}';
     }
-    
-    
 
+    
 }

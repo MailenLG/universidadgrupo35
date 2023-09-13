@@ -27,11 +27,12 @@ public class Main {
         
         
         //Alumno CRUD
-       //Alumno juan =new Alumno(12312312, "Lunass", "Pedro", LocalDate.of(1980, Month.APRIL, 25), true);//aca solo se guarda en la RAM
-        AlumnoData aludata= new AlumnoData();//aca es para guardarlo en la base de datos
-       Alumno juan =new Alumno(1,25684752, "Lunssass", "Juan Pedro", LocalDate.of(1980, Month.APRIL, 25),true);//aca solo se guarda en la RAM
+      // Alumno juan =new Alumno(12312312, "Lunass", "Pedro", LocalDate.of(1980, Month.APRIL, 25), true);//aca solo se guarda en la RAM
+      Alumno juan =new Alumno(1,12312312, "Lunass", "Pedro", LocalDate.of(1980, Month.APRIL, 25), true);//aca solo se guarda en la RAM
+      //  AlumnoData aludata= new AlumnoData();//aca es para guardarlo en la base de datos
+      // Alumno juan =new Alumno(1,25684752, "Lunssass", "Juan Pedro", LocalDate.of(1980, Month.APRIL, 25),true);//aca solo se guarda en la RAM
 //          AlumnoData alu = new AlumnoData();//aca es para guardarlo en la base de datos
-       aludata.modificarAlumno(juan);
+      // aludata.modificarAlumno(juan);
 ////        alu.eliminarAlumno(1);
 ////        alu.buscarAlumnoPorDni(12312312);+
 //          for(Alumno alumno:alu.listarAlumnos()){
@@ -42,7 +43,7 @@ public class Main {
 //          }
           
 //        //Materia CRUD
-//        Materia mat = new Materia("Matematica I", 1, true);//aca solo se guarda en la RAM
+        Materia mat = new Materia(1,"Matematica I", 1, true);//aca solo se guarda en la RAM
 //        MateriaData matdata = new MateriaData();//aca es para guardarlo en la base de datos
 //        Materia matmod = new Materia(1, "Matematicassss I", 1, true);//aca solo se guarda en la RAM
 //        
@@ -68,7 +69,7 @@ public class Main {
 //        }
 
        //inscripcion CRUD
-        InscripcionSergio inscrip = new InscripcionSergio(1,2,8);
+        InscripcionSergio inscrip = new InscripcionSergio(juan,mat,9);
         InscripcionDataSergio inscripData = new InscripcionDataSergio();
         inscripData.guardarInscripcion(inscrip);
         
