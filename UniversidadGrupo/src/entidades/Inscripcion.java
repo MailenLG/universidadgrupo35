@@ -2,7 +2,7 @@
 package entidades;
 
 
-public class InscripcionSergio {
+public class Inscripcion {
  
     
 //Declaro Varables    
@@ -13,13 +13,13 @@ private int nota;
 
 //Creo Constructores 
 
-    public InscripcionSergio(Alumno alumno, Materia materia, int nota) {
+    public Inscripcion(Alumno alumno, Materia materia, int nota) {
         this.alumno = alumno;
         this.materia = materia;
         this.nota = nota;
     }
 
-    public InscripcionSergio() {
+    public Inscripcion() {
     }
 
     public int getIdInscripcion() {

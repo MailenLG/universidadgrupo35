@@ -2,7 +2,7 @@
 package accesoadatos;
 
 
-import entidades.InscripcionSergio;
+import entidades.Inscripcion;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,16 +12,16 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
 
-public class InscripcionDataSergio {
+public class InscripcionData {
     
     
      private Connection con = null;
 
-    public InscripcionDataSergio() {
+    public InscripcionData() {
         con = Conexion.getConexion(); //cargar los drivers y establecer la conexion a la DB
     }
 
-    public void guardarInscripcion(InscripcionSergio inscripcion) {
+    public void guardarInscripcion(Inscripcion inscripcion) {
         
         //Consulta para agregar materia
 
@@ -47,29 +47,29 @@ public class InscripcionDataSergio {
         }
     }
 
-//    public void modificarInscripcion(Inscripcion materia) {
-//        
-//        //Consulta para modificar materia
-//        String sql = "UPDATE materia SET nombre= ?, anio= ? "
-//                + "WHERE idMateria= ?";
-//        try {
-//            PreparedStatement ps = con.prepareStatement(sql);
-//            ps.setString(1, materia.getNombre());
-//            ps.setInt(2, materia.getAnio());
-//            ps.setInt(3,materia.getIdMateria());
-//            int exito = ps.executeUpdate();
-//
-//            if (exito == 1) {
-//                JOptionPane.showMessageDialog(null, "Materia modificada");
-//            } else {
-//                JOptionPane.showMessageDialog(null, "dedicate a otra cosa");
-//            }
-//
-//        } catch (SQLException ex) {
-//            JOptionPane.showMessageDialog(null, "error al acceder a la tabla Materia");
-//        }
-//
-//    }
+    public void modificarInscripcion(Inscripcion inscrip) {
+        
+        //Consulta para modificar inscrip
+        String sql = "UPDATE materia SET nombre= ?, anio= ? "
+                + "WHERE idMateria= ?";
+        try {
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, inscrip.getNombre());
+            ps.setInt(2, inscrip.getAnio());
+            ps.setInt(3,inscrip.getIdMateria());
+            int exito = ps.executeUpdate();
+
+            if (exito == 1) {
+                JOptionPane.showMessageDialog(null, "Materia modificada");
+            } else {
+                JOptionPane.showMessageDialog(null, "dedicate a otra cosa");
+            }
+
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "error al acceder a la tabla Materia");
+        }
+
+    }
 //
 //    public void eliminarMateria(int idMateria) {
 //        String sql = "UPDATE materia SET estado = 0 WHERE idMateria=? ";

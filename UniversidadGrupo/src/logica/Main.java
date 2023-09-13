@@ -11,9 +11,9 @@ import entidades.Materia;
 //Import Conexiones
 import accesoadatos.Conexion;
 import accesoadatos.AlumnoData;
-import accesoadatos.InscripcionDataSergio;
+import accesoadatos.InscripcionData;
 import accesoadatos.MateriaData;
-import entidades.InscripcionSergio;
+import entidades.Inscripcion;
 import java.sql.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -31,16 +31,16 @@ public class Main {
       Alumno juan =new Alumno(1,12312312, "Lunass", "Pedro", LocalDate.of(1980, Month.APRIL, 25), true);//aca solo se guarda en la RAM
       //  AlumnoData aludata= new AlumnoData();//aca es para guardarlo en la base de datos
       // Alumno juan =new Alumno(1,25684752, "Lunssass", "Juan Pedro", LocalDate.of(1980, Month.APRIL, 25),true);//aca solo se guarda en la RAM
-//          AlumnoData alu = new AlumnoData();//aca es para guardarlo en la base de datos
+         AlumnoData alu = new AlumnoData();//aca es para guardarlo en la base de datos
       // aludata.modificarAlumno(juan);
 ////        alu.eliminarAlumno(1);
-////        alu.buscarAlumnoPorDni(12312312);+
-//          for(Alumno alumno:alu.listarAlumnos()){
-//              System.out.println(alumno.getDni());   
-//              System.out.println(alumno.getApellido());   
-//              System.out.println(alumno.getNombre());   
-//              System.out.println(alumno.getFechaNacimiento());   
-//          }
+        alu.buscarAlumnoPorDni(25684752);
+          for(Alumno alumno:alu.listarAlumnos()){
+              System.out.println(alumno.getDni());   
+              System.out.println(alumno.getApellido());   
+              System.out.println(alumno.getNombre());   
+              System.out.println(alumno.getFechaNacimiento());   
+          }
           
 //        //Materia CRUD
         Materia mat = new Materia(1,"Matematica I", 1, true);//aca solo se guarda en la RAM
@@ -69,8 +69,8 @@ public class Main {
 //        }
 
        //inscripcion CRUD
-        InscripcionSergio inscrip = new InscripcionSergio(juan,mat,9);
-        InscripcionDataSergio inscripData = new InscripcionDataSergio();
+        Inscripcion inscrip = new Inscripcion(juan,mat,9);
+        InscripcionData inscripData = new InscripcionData();
         inscripData.guardarInscripcion(inscrip);
         
     }
